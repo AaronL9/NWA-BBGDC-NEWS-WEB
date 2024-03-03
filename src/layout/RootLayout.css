@@ -1,0 +1,75 @@
+.root-header {
+  height: 100px;
+  background-image: url("/barangay_hall.png");
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+}
+
+.root-header__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.root-header__title a {
+  color: white;
+  text-decoration: none;
+}
+.root-header__title span:first-child {
+  font-weight: 200;
+}
+.root-header__title span:nth-child(2) {
+  font-weight: 200;
+  border-bottom: 1px solid white;
+}
+
+.root-header__banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.root-header__banner img {
+  width: 70px;
+  height: 70px;
+}
+.root-header__banner p {
+  font-size: 1.25rem;
+}
+
+.error-boundary {
+  width: min(700px, 90%);
+  height: 350px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .root-header {
+    padding-inline: 1rem;
+  }
+  .root-header__title {
+    font-size: 1rem;
+  }
+  .root-header__banner p {
+    font-size: 1rem;
+  }
+  .root-header__banner img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 460px) {
+  .root-header__banner p {
+    display: none;
+  }
+}

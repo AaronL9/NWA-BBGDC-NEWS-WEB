@@ -1,0 +1,19 @@
+.error {
+  background-image: url("/barangay_hall.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.error-container {
+  width: 800px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  padding-inline: 2rem;
+}

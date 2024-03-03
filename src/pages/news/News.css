@@ -1,0 +1,39 @@
+.news-view {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.news-view__header {
+  width: min(800px, 90%);
+  margin-inline: auto;
+}
+
+.news-view__header img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.news-view__header h2 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  text-align: left;
+}
+.news-view__header h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.news-view__body {
+  width: min(800px, 90%);
+  margin-inline: auto;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .news-view {
+    width: 100%;
+  }
+}
