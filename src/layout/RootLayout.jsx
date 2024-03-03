@@ -81,10 +81,8 @@ export default function RootLayout() {
       </ErrorBoundary>
       <footer>
         <div className="footer-content">
-          <div className="footer-text">
-            <p>© 2024 Neighborhood Watch.</p>
-            <p>All Rights Reserved.</p>
-          </div>
+          <p>© 2024 Neighborhood Watch.</p>
+          <p>All Rights Reserved.</p>
         </div>
       </footer>
     </>
