@@ -46,16 +46,29 @@ export default function Home() {
     fetchNews();
   }, [page]);
 
+  if (loading) {
+    return (
+      <div className="loader-overlay">
+        <Spinner />
+      </div>
+    );
+  }
+
+  if (news.length === 0) {
+    return (
+      <div className="no-news-placeholder">
+        Currently, there are no news articles available. Stay tuned for updates!
+        Thank you for your understanding.
+      </div>
+    );
+  }
+
   return (
     <div className="news-root">
       <div className="news-container">
-        {loading ? (
-          <div className="loader-overlay">
-            <Spinner />
-          </div>
-        ) : (
-          news.map((data) => <NewsCard key={data.objectID} {...data} />)
-        )}
+        {news.map((data) => (
+          <NewsCard key={data.objectID} {...data} />
+        ))}
       </div>
       <div className="news-pagination">
         <Stack spacing={2}>

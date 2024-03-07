@@ -18,3 +18,14 @@
   justify-content: center;
   margin-top: auto;
 }
+
+.no-news-placeholder {
+  width: 500px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+}
