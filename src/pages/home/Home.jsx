@@ -34,7 +34,7 @@ export default function Home() {
           page: page - 1,
           hitsPerPage: 12,
         });
-        setPageNum(Math.ceil(nbHits / 10));
+        setPageNum(Math.ceil(nbHits / 12));
         setNews(hits);
       } catch (error) {
         alert(error.message);

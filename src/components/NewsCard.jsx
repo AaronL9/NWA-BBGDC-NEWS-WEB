@@ -4,6 +4,7 @@ import ImageLoader from "./loader/image_loader/ImageLoader";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { formatTimeAgo } from "../util/DateFromatter";
+import { cutStringWithEllipsis } from "../util/StringFormatter";
 
 export default function NewsCard({ objectID, title, imageUrl, updatedAt }) {
   const [imageLoading, setImageLoading] = useState(true);
@@ -24,7 +25,7 @@ export default function NewsCard({ objectID, title, imageUrl, updatedAt }) {
         />
       </div>
       <div className="content">
-        <Link to={objectID}>{title}</Link>
+        <Link to={objectID}>{cutStringWithEllipsis(title, 32)}</Link>
       </div>
       <div className="news-card__date-container">
         <div className="date">

@@ -15,3 +15,19 @@ export function formatNewsDate(createdAt, updatedAt) {
 
   return formattedDate;
 }
+
+export function cutStringWithEllipsis(inputString, maxLength) {
+  if (inputString.length > maxLength) {
+    let trimmedString = inputString.substring(0, maxLength);
+
+    while (/\s$/.test(trimmedString)) {
+      trimmedString = trimmedString.substring(0, trimmedString.length - 1);
+    }
+
+    trimmedString += "...";
+
+    return trimmedString;
+  } else {
+    return inputString;
+  }
+}

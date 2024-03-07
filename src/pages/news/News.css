@@ -19,6 +19,7 @@
 .news-view__header h2 {
   font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
   text-align: left;
+  word-wrap: break-word;
 }
 .news-view__header h3 {
   text-align: left;
